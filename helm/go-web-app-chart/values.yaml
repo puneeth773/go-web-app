@@ -2,7 +2,7 @@ replicaCount: 3
 
 image:
   repository: 629068384298.dkr.ecr.us-east-1.amazonaws.com/go-web-app
-  tag: "33489139032"
+  tag: "33490813410"
   pullPolicy: IfNotPresent
 
 service:
