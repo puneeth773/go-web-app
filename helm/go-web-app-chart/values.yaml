@@ -13,7 +13,7 @@ green:
 image:
   pullPolicy: IfNotPresent
 
-activeVersion: green
+activeVersion: blue
 
 service:
   type: ClusterIP
