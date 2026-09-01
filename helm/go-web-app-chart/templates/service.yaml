@@ -4,8 +4,11 @@ metadata:
   name: {{ .Release.Name }}
 spec:
   type: {{ .Values.service.type }}
+
   selector:
     app: {{ .Release.Name }}
+    version: {{ .Values.activeVersion }}
+
   ports:
     - port: {{ .Values.service.port }}
       targetPort: {{ .Values.service.targetPort }}

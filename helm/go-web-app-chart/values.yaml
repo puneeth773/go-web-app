@@ -1,9 +1,19 @@
 replicaCount: 4
 
+blue:
+  image:
+    repository: 629068384298.dkr.ecr.us-east-1.amazonaws.com/go-web-app
+    tag: "33490813410"
+
+green:
+  image:
+    repository: 629068384298.dkr.ecr.us-east-1.amazonaws.com/go-web-app
+    tag: "33492119384"
+
 image:
-  repository: 629068384298.dkr.ecr.us-east-1.amazonaws.com/go-web-app
-  tag: "33492119384"
   pullPolicy: IfNotPresent
+
+activeVersion: blue
 
 service:
   type: ClusterIP
